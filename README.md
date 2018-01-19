@@ -1,3 +1,5 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/gerardolopezduenas/GildedRose?branch=master)](https://bettercodehub.com/)
+
 ======================================
 # Gilded Rose Requirements Specification
 ======================================
