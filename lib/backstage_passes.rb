@@ -1,5 +1,8 @@
 require_relative './item_behavior'
 
+##
+# Backstage passes increases in Quality
+# as its SellIn value approaches
 class BackstagePasses < ItemBehavior
   def update
     case @item.sell_in
