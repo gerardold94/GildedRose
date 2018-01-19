@@ -1,6 +1,7 @@
 require_relative './aged_brie'
 require_relative './backstage_passes'
 require_relative './sulfuras'
+require_relative './conjured'
 require_relative './item_behavior'
 
 ##
@@ -9,7 +10,8 @@ class Factory
   PRODUCTS = {
     'Aged Brie' => AgedBrie,
     'Backstage passes to a TAFKAL80ETC concert' => BackstagePasses,
-    'Sulfuras, Hand of Ragnaros' => Sulfuras
+    'Sulfuras, Hand of Ragnaros' => Sulfuras,
+    'Conjured Mana Cake' => Conjured
   }
 
   def self.create_instance(item)
