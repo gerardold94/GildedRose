@@ -1,6 +1,6 @@
 require_relative './item_behavior'
 
-class AgedBrie
+class AgedBrie < ItemBehavior
   ##
   # Override update method
   # AgedBrie, Backstage and Sulfuras increase 1 instead of decreasing

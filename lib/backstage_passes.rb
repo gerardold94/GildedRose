@@ -1,6 +1,6 @@
 require_relative './item_behavior'
 
-class BackstagePasses
+class BackstagePasses < ItemBehavior
   def update
     case @item.sell_in
     when 0..6
