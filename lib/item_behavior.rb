@@ -22,7 +22,7 @@ class ItemBehavior
     decrease_quality if expired?
   end
 
-  def decrease_sell_in(item)
+  def decrease_sell_in
     @item.sell_in -= 1
   end
 

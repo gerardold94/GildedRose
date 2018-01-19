@@ -8,7 +8,8 @@ class BackstagePasses
     when 6..11
       increase_quality = 2
     else
-      increase_quality = 1 # AgedBrie, Backstage and Sulfuras increase 1 by default
+      # AgedBrie, Backstage and Sulfuras increase 1 by default
+      increase_quality = 1
     end
     update_quality(@item.quality + increase_quality)
   end
