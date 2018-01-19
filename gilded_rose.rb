@@ -1,10 +1,21 @@
+require './lib/factory'
+
 class GildedRose
 
   def initialize(items)
     @items = items
   end
 
-  def update_quality()
+  def update_quality
+    @items.map do |item|
+      product = Factory.create_instance(item)
+      product.update
+      product.decrease_sell_in
+      product.process_expired if item.sell_in < 0
+    end
+  end
+
+  def legacy_update_quality()
     @items.each do |item|
       if item.name != "Aged Brie" and item.name != "Backstage passes to a TAFKAL80ETC concert"
         if item.quality > 0
