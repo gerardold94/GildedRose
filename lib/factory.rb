@@ -6,7 +6,7 @@ require_relative './item_behavior'
 ##
 # Class to create the correct product instance
 class Factory
-  def create_instance(item)
+  def self.create_instance(item)
     case item.name
     when 'Aged Brie'
       AgedBrie.new(item)
